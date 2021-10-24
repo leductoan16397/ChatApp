@@ -1,0 +1,16 @@
+.send-dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: transparent;
+    border: 2px solid;
+    // color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: xx-small;
+}

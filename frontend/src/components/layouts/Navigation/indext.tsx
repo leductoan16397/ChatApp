@@ -9,6 +9,7 @@ export const Navigation: FC = () => {
     <>
       <NavigationHeader />
       <NavigationSearch />
+      <div className="search-bottom-border" />
       <NavigationGroup />
     </>
   );

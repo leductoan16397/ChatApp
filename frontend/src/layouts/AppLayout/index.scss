@@ -8,8 +8,9 @@
     border-right: 1px solid grey;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
-
-
-
+.content {
+    max-height: 100%;
+}
