@@ -1,0 +1,93 @@
+.loading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+
+}
+
+$min-dot:-5px;
+$medium-dot:2px;
+$dot-color:gray;
+$before-shadow:100px;
+$mid-shadow:120px;
+$after-shadow:130px;
+
+.dot-pulse {
+    position: relative;
+    left: -$mid-shadow;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: $dot-color;
+    animation: dotPulse 1.5s infinite linear;
+    animation-delay: .25s;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: $dot-color;
+}
+
+.dot-pulse::before {
+    animation: dotPulseBefore 1.5s infinite linear;
+    animation-delay: 0s;
+}
+
+.dot-pulse::after {
+    animation: dotPulseAfter 1.5s infinite linear;
+    animation-delay: .5s;
+}
+
+
+@keyframes dotPulseBefore {
+    0% {
+        box-shadow: $before-shadow 0 0 $min-dot $dot-color;
+    }
+
+    30% {
+        box-shadow: $before-shadow 0 0 $medium-dot $dot-color;
+    }
+
+    100% {
+        box-shadow: $before-shadow 0 0 $min-dot $dot-color;
+    }
+}
+
+@keyframes dotPulse {
+    0% {
+        box-shadow: $mid-shadow 0 0 $min-dot $dot-color;
+    }
+
+    30% {
+        box-shadow: $mid-shadow 0 0 $medium-dot $dot-color;
+    }
+
+    100% {
+        box-shadow: $mid-shadow 0 0 $min-dot $dot-color;
+    }
+}
+
+@keyframes dotPulseAfter {
+    0% {
+        box-shadow: $after-shadow 0 0 $min-dot $dot-color;
+    }
+
+    30% {
+        box-shadow: $after-shadow 0 0 $medium-dot $dot-color;
+    }
+
+    100% {
+        box-shadow: $after-shadow 0 0 $min-dot $dot-color;
+    }
+}

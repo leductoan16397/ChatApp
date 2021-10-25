@@ -4,7 +4,6 @@
     position: relative;
 
     &:hover {
-
         .setting {
             display: block;
         }
@@ -19,8 +18,11 @@
 
         &:hover {
             background-color: #d8d6d6;
-
         }
+    }
+
+    .active {
+        background-color: #d8d6d6;
     }
 }
 
@@ -53,11 +55,8 @@
     background-color: white;
 
     &:hover {
-        background-color: #d8d6d6;
+        background-color: #ccc6c6;
 
-        .description {
-            background-color: white;
-        }
     }
 }
 
