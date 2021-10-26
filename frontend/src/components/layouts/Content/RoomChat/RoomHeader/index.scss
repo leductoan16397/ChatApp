@@ -1,4 +1,35 @@
 .room-chat-header {
     width: 100%;
     height: 70px;
+    border-bottom: 1px solid #d4d2d2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room-avatar-status{
+    min-width: 15%;
+    max-width: 50%;
+    display: flex;
+    padding: 0 2em;
+
+    .room-avatar{
+        width: 50px;
+    }
+
+    .room-status-name{
+        width: calc(100% - 50px);
+        padding: 0 1em;
+
+        .room-name{
+            font-weight: 500;
+        }
+    }
+}
+
+.room-avatar{
+    position: relative;
+    height: 50px;
+    width: 50px;
 }
