@@ -6,30 +6,56 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 1em;
 }
 
-.room-avatar-status{
-    min-width: 15%;
-    max-width: 50%;
+.room-avatar-status {
     display: flex;
-    padding: 0 2em;
+    width: 91%;
+    text-align: start;
 
-    .room-avatar{
+    .room-avatar {
         width: 50px;
     }
 
-    .room-status-name{
-        width: calc(100% - 50px);
+    .room-status-name {
         padding: 0 1em;
 
-        .room-name{
-            font-weight: 500;
+        .room-name {
+            font-weight: 700;
         }
     }
 }
 
-.room-avatar{
+.room-avatar {
     position: relative;
     height: 50px;
     width: 50px;
+}
+
+.room-action {
+    display: flex;
+    width: 9%;
+    align-items: center;
+    height: 100%;
+
+    .room-action-icon {
+        width: calc(100% / 3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            cursor: pointer;
+        }
+
+        .room-info-icon-active {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
