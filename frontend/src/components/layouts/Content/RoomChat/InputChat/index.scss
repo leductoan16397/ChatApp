@@ -1,6 +1,6 @@
 .chat-input {
     width: 100%;
-    min-height: 60px;
+    min-height: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,15 +17,15 @@
 }
 
 .more-action {
-    width: 2%;
+    width: 57px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 
 }
 
 .input-mess-icon {
-    $iconSize: 30px;
+    $iconSize: 57px;
 
     display: flex;
     align-items: center;
@@ -33,25 +33,25 @@
     border-radius: 50%;
     height: $iconSize;
     width: $iconSize;
+    cursor: pointer;
 
     &:hover {
         background-color: #ffefef;
-
     }
 }
 
 .input-message-group {
-    width: 94%;
+    width: calc(100% - (2 * 57px)) ;
     display: flex;
     flex-direction: row;
 
 }
 
 .input-mes-icon-gr {
-    width: 90px;
+    width: calc(3*57px);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
 
 }
 
@@ -59,10 +59,74 @@
 .input-mes-text {
     width: calc(100% - 90px);
     background-color: #ffefef;
-    // border-radius: 25px;
-    border-radius: 25em;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .send-like {
-    width: 3%;
+    width: 57px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.choose-emoji {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+
+    &:hover {
+        background-color: #bfacac;
+    }
+}
+
+.chat-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.input-area {
+    width: calc(100% - 44px);
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .chat-placeholder {
+        position: absolute;
+        // top: 0;
+        text-align: start;
+    }
+}
+
+.chat-area {
+    padding: 0.5em 0;
+}
+
+
+.chat-values {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+
+    &::placeholder {
+        color: #bba8a8;
+    }
+
+    &:focus {
+        outline: none;
+    }
 }

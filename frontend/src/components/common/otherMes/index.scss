@@ -1,0 +1,32 @@
+.member-mes {
+    display: flex;
+    height: 100%;
+    padding: 0 1em;
+}
+
+.mes-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    width: 4%;
+}
+
+.chat-container {
+    height: 100%;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-content {
+    max-width: 80%;
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+
+.chat-action {
+    width: 10%;
+}
